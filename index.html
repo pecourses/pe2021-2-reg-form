@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/index.js"></script>
+  <title> Registration form</title>
+</head>
+
+<body>
+  <main>
+    <h1>Registration form</h1>
+    <form action="#">
+      <label>
+        <span>Name:</span>
+        <input type="text" name="first-name" placeholder="Firstname" pattern="[A-Z][a-z]{1,35}(-[A-Z][a-z]{1,35})?"
+          maxlength="36" autofocus>
+      </label>
+      <label>
+        <span>Surname:</span>
+        <input type="text" name="last-name" placeholder="Lastname" pattern="[A-Z][a-z]{1,35}(-[A-Z][a-z]{1,35})??">
+      </label>
+      <label>
+        <span>Email:</span>
+        <input type="email" name="email" placeholder="your@email">
+      </label>
+      <label>
+        <span>Tel.:</span>
+        <input type="tel" name="tel" placeholder="+380991111111" pattern="\+380\d{9}">
+      </label>
+      <label>
+        <span>Password:</span>
+        <input type="password" name="passw"
+          pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*[0-9].*)(?=.*[!@#$%^&*()_].*).{8,24}">
+      </label>
+      <label>
+        <span>Password confirmation:</span>
+        <input type="password" name="passw"
+          pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*[0-9].*)(?=.*[!@#$%^&*()_].*).{8,24}">
+      </label>
+      <button type="submit">Registration</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
